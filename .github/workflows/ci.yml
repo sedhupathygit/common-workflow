@@ -1,6 +1,9 @@
 name: Pub Key
 on:
   workflow_call:
+    secrets:
+      testsecret:
+        required: true
 
 jobs:
   pub-key:
