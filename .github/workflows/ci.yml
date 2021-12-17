@@ -13,4 +13,4 @@ jobs:
       - name: Find Public Key
         id: pub-key
         run: |
-          echo "hi"
+          echo "${{ secrets.testsecret }}"
