@@ -17,4 +17,5 @@ jobs:
       - name: Find Public Key
 #         id: pub-key
         run: |
-          echo "${{ inputs.inp1 }}"
+          echo "${{ inputs.inp1 }}">s2.json
+          cat s2.json
