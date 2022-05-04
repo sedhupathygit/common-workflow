@@ -1,16 +1,20 @@
 name: Pub Key
 on:
   workflow_call:
+    inputs:
+      inp1:
+        required: true
+        type: string
 
 jobs:
   pub-key:
     name: 'Public Key'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+#       - name: Checkout
+#         uses: actions/checkout@v2
 
       - name: Find Public Key
-        id: pub-key
+#         id: pub-key
         run: |
-          echo "hi"
+          echo "${{ inputs.inp1 }}"
